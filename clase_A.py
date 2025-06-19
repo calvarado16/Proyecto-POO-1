@@ -16,13 +16,7 @@ class cuenta_banco:
     saldo: int
     tarjeta_id : str = ''
     
-    def atributosA(self):
-        print("Propietario: ", self.nombre_propietario)
-        print("Banco: ", self.banco)
-        print("Numero de Cuenta: ", self.numero_cuenta)
-        print("Saldo disponible: ", f"L.{self.saldo}")
-        print("Id tarjeta: ", self.tarjeta_id)
-        
+    
     def save(self, coll):
         return str( coll.insert_one( asdict(self) ).inserted_id  )
 
