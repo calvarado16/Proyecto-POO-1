@@ -45,7 +45,7 @@ def main() : #definir que esto se ejecute primero
     uri = "mongodb+srv://calvarado04:ferrera504@cluster0.etwaeya.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
     coll = get_collection(uri) #recolecta la coleccion
     tarjeta_credito1 = tarjeta_credito("Andres Ferrera", 2029, 78652132015, 589)  
-    cuenta_banco1 = cuenta_banco("Angel Valladares", "Lafise", 769821325, 1000000)
+    cuenta_banco1 = cuenta_banco("Andres Ferrera", "Lafise", 769821325, 1000000)
     
     id_cuenta = cuenta_banco1.save(coll)
     tarjeta_credito1.cuenta_id = id_cuenta
