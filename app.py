@@ -11,9 +11,6 @@ load_dotenv()
 
 URI = os.getenv("URI") # URI:identificaor uniforme de recursos
        
-def save(self, coll): # obtiene la coleccion en mondogdb
-        return str(coll.insert_one(asdict(self)).inserted_id) #Convierte la instancia (objeto) de python en un diccionario (parecido a json) la inserta en la coll (coleccion de mongoDB) y retorna el id
-    
 def get_collection(uri, db="demo_db", col="Cuenta Bancaria"): #Para establecer la conexion como mongodb y recolectar la coleccion
     client = MongoClient (
         uri
