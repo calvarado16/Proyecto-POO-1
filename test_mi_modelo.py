@@ -22,8 +22,8 @@ class TestSistemaBancario(unittest.TestCase):
         
         
         #Crear instancias con datos de prueba
-        cuenta = cuenta_banco("TEST-Clase_A", "Banco de A", 111222333, 50000)
-        tarjeta = tarjeta_credito("TEST Clase_B", 2030, 999888777, 123)
+        cuenta = cuenta_banco("Clase A", "Banco de A", 111222333, 50000)
+        tarjeta = tarjeta_credito("Clase B", 2030, 999888777, 123)
         
         # Guardar cuenta y obtener ID
         cuenta_id = cuenta.save(self.coll)
