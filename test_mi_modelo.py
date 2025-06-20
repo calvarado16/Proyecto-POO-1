@@ -14,9 +14,6 @@ class TestSistemaBancario(unittest.TestCase):
         cls.db = cls.client["demo_db"]
         cls.coll = cls.db["Cuenta Bancaria"]
         
-        # Limpiar datos de pruebas anteriores
-        cls.coll.delete_many({"nombre_propietario": {"$regex": "^TEST-"}})
-        
 
     def test_clases(self):
         
