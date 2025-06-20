@@ -40,7 +40,6 @@ class TestSistemaBancario(unittest.TestCase):
         tarjeta_db = self.coll.find_one({"_id": ObjectId(tarjeta_id)})
         
         
-        # Verificaciones importantes
         self.assertTrue(ObjectId.is_valid(cuenta_id))
         self.assertTrue(ObjectId.is_valid(tarjeta_id))
         self.assertEqual(str(cuenta_db["tarjeta_id"]), tarjeta_id)
